@@ -1,0 +1,7 @@
+/bundle.js
+/fonts
+/node_modules
+/bundle.js.map
+/package.json
+/webpack.config.js
+/.DS_STORE

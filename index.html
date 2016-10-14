@@ -1,0 +1,226 @@
+<html>
+<head>
+  <style>
+  @font-face {
+    font-family: Filosofia;
+    src: url("./fonts/Filosofia OT/FilosofiaOT-Bold.otf");
+  }
+  @font-face {
+    font-family: Filosofia-Regular;
+    src: url("./fonts/Filosofia OT/FilosofiaOT-Italic.otf");
+  }
+  @font-face {
+    font-family: Tungsten;
+    src: url("./fonts/Tungsten/Tungsten-Medium.otf");
+  }
+  @font-face {
+    font-family: DalaFat;
+    src: url("./fonts/Dala_Moa/Dala Moa - Fat Italic.otf");
+  }
+  @font-face {
+    font-family: DalaItalic;
+    src: url("./fonts/Dala_Moa/Dala Moa - Medium Italic.otf");
+  }
+  body{
+    margin: 0px;
+    overflow-x: hidden;
+  }
+  cover{
+    border-bottom: none;
+  }
+  container{
+    pointer-events: none;
+    width: 101%;
+    min-height: 150%;
+    border-bottom: solid 5px black;
+    float: left;
+    position: relative;
+    overflow: hidden;
+  }
+  title{
+    margin-top: 200px;
+    font-family: DalaFat;
+    margin-bottom: 10px;
+    display: block;
+    width: 120%;
+    font-size: 48pt;
+    color: inherit;
+  }
+  italics{
+    font-family: DalaItalic;
+    font-size: 18pt;
+    float:left;
+    line-height: 1.1em;
+    color: black;
+    margin-bottom: 10px;
+    clear: both;
+  }
+  description{
+    float: left;
+    color: black;
+    font-family: Filosofia;
+    font-size: 12pt;
+    line-height: 1.3em;
+
+  }
+
+  .header{
+    position: fixed;
+    left: 50px;
+    top: 30px;
+    width: 30px;
+    height: 80px;
+    z-index: 300;
+    transition: 1s;
+  }
+
+  topBurger{
+    float: left;
+    width: 100%;
+    clear: both;
+    height: 5%;
+    background-color: black;
+  }
+
+  midBurger{
+    float:right;
+    width: 30px;
+    background-color: black;
+    height: 5%;
+    clear: both;
+    margin-top: 10px;
+    transition: 1s;
+
+  }
+
+  bottomBurger{
+    float: left;
+    width: 30px;
+    clear: both;
+    background-color: black;
+    height: 5%;
+    margin-top: 10px;
+    transition: 1s;
+
+  }
+
+  .shelf{
+    background-color: white;
+    position: absolute;
+    border-left: solid 5px black;
+    background-color: white;
+    color: black;
+    border-right: solid 5px black;
+    height: 100%;
+    z-index: 150;
+
+    transition: 2s;
+  }
+  .shelf:hover{
+    cursor: pointer;
+  }
+  .image:hover{
+    background-color: rgb(250,0,100);
+    cursor: pointer;
+
+  }
+  .trippyBrick{
+    position: absolute;
+    left: 40%;
+    height: 100%;
+    width: 60%;
+    background-color: black;
+  }
+  .image{
+    position: absolute;
+    height: auto;
+    z-index: 100;
+    box-shadow: 1px 1px 40px rgba(0,0,0,.2);
+  }
+  .cover{
+    width:100%;
+    height:100%;
+    box-shadow: 0px 10px 10px 10px rgba(0,0,0,.2);
+    position: absolute;
+    /*display: none;*/
+    top: 0px;
+    left: 0px;
+    z-index: 200;
+  }
+  .projectSpacer{
+    position: absolute;
+    top:0px;
+    width: 100%;
+    z-index: 300;
+    height: 5px;
+    background-color:black;
+  }
+  .topSpacer{
+    width:100%;
+    height:60%;
+    float:left;
+    background-color: white;
+  }
+  .leftSpacer{
+    height:40%;
+    float:left;
+    background-color: white;
+  }
+  .logo{
+    float: left;
+    width: 20%;
+  }
+  .trippy{
+    z-index: 150;
+  }
+  .topRightSpacer{
+    float: left;
+    height: 0px;
+    width: 60%;
+    background-color: white;
+  }
+  .midRightSpacer{
+    float: left;
+    width: 40%;
+    background-color: white;
+  }
+  .header:hover{
+    cursor: pointer;
+  }
+  .containerContainer{
+    width:1000px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+  }
+  </style>
+</head>
+<body>
+  <div class = "header">
+
+    <topBurger></topBurger>
+    <midBurger></midBurger>
+    <bottomBurger></bottomBurger>
+
+  </div>
+  <cover class = "cover">
+    <div class = "topSpacer">
+    </div>
+    <div class = "leftSpacer">
+    </div>
+    <img class = "logo" src = "images/logo.png">
+    <div class = "midRightSpacer"></div>
+    <div class = "topRightSpacer">
+    </div>
+  </cover>
+  <div class = "containerContainer">
+  <container class = "trippy" id="1"></container>
+  <container class="special"></container>
+  <container id="2"></container>
+  <container id="3"></container>
+  <container id="4"></container>
+
+  <div>
+</body>
+<script src = "bundle.js"></script>
+</html>
